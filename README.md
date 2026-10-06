@@ -67,18 +67,6 @@ paths_dict = file_paths_values.set_index("key_")["value_"].to_dict()
 
 The `notebook` column identifies the notebook using a given path, `key_` provides the variable name used within the notebook, and `value_` contains the corresponding filesystem path.
 
-An example file may look like:
-
-```text
-notebook,key_,value_
-data_grab,output_dir,/path/to/data/raw/
-qc_ingestion,input_dir,/path/to/data/raw/
-qc_ingestion,output_dir,/path/to/data/processed/
-trends_calculation,input_dir,/path/to/data/processed/
-trends_calculation,output_dir,/path/to/data/trends/
-trends_figures,input_dir,/path/to/data/trends/
-trends_figures,output_dir,/path/to/figures/
-```
 
 Paths in `filepaths_values.csv` are placeholders only and should be updated before running the notebooks.
 
